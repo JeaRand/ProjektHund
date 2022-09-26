@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ProjektHund.ViewModels;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -20,9 +21,11 @@ namespace ProjektHund
     /// </summary>
     public partial class MainWindow : Window
     {
+        readonly MainViewModels mvm = new MainViewModels();
         public MainWindow()
         {
-           
+            InitializeComponent();
+            DataContext = mvm;
         }
     }
 }
