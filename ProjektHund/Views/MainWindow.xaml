@@ -100,6 +100,9 @@
                    FontWeight="Bold" Grid.ColumnSpan="2"
                    />
 
+        
+        
+        
         <ContentControl Grid.Row="2" Grid.ColumnSpan="2" Content="{Binding SelectedViewModel}" Margin="10,65,10,10" Grid.RowSpan="3"/>
     </Grid>
 
