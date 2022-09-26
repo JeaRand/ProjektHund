@@ -6,9 +6,8 @@
         xmlns:local="clr-namespace:ProjektHund"
         mc:Ignorable="d"
         WindowStyle="None"
-        ResizeMode="NoResize"
         Background="SaddleBrown"
-    Title="FrontSide" Height="500" Width="900">
+        Title="FrontSide" Height="500" Width="900">
 
     <Grid>
         <Grid.RowDefinitions>
@@ -27,7 +26,6 @@
 
         <Grid Background="Black"
               Grid.ColumnSpan="2">
-
 
             <Grid.ColumnDefinitions>
                 <ColumnDefinition/>
@@ -61,65 +59,43 @@
                        HorizontalAlignment="Center"
                        FontFamily="Fonts/Dosis"
                        FontWeight="Medium"/>
-
-        
-
-
+            <StackPanel Grid.Column="2" Grid.ColumnSpan="11" Margin="51,73,46,-83" Orientation="Horizontal">
+                <Button
+                    Content="Create Dog"
+                    FontFamily="Fonts/Dosis"
+                    FontSize="22"
+                    Margin="0,0,20,0"
+                    Command="{Binding UpdateViewCommand}" CommandParameter="CreateDog"
+                    FontWeight="DemiBold" RenderTransformOrigin="0.494,0.654"
+                Height="30" Width="190"
+                />
+                <Button
+                    Content="Search HD Index"
+                    FontFamily="Fonts/Dosis"
+                    FontSize="22"
+                    HorizontalAlignment="Center"
+                    Command="{Binding UpdateViewCommand}" CommandParameter="SearchHDIndex"
+                    FontWeight="DemiBold" Height="30" Width="190"/>
+                <Button
+                    Content="Find Dog"
+                    FontFamily="Fonts/Dosis"
+                    FontSize="22"
+                    Margin="20,0,0,0"
+                    Command="{Binding UpdateViewCommand}" CommandParameter="FindDog"
+                    FontWeight="DemiBold" Height="30" Width="192"/>
+            </StackPanel>
         </Grid>
 
         <TextBlock Grid.Row="1"
-                   FontSize="46"
-                   Text="{Binding Title}"
-                   Margin="150,50,150,30" 
-                   FontFamily="Fonts/Dosis"
-                   FontWeight="Bold"
-                   Grid.ColumnSpan="2"
-                   Grid.RowSpan="2"/>
-
-        <TextBlock Grid.Row="3"
                    FontSize="34"
-                   Text="Choose options"
-                   Margin="100,10,100,10" 
+                   Text="Choose option"
+                   HorizontalAlignment="Center"
+                   Margin="327,7,313,18" 
                    FontFamily="Fonts/Dosis"
-                   FontWeight="Bold"
+                   FontWeight="Bold" Grid.ColumnSpan="2"
                    />
 
-        <Button Grid.Column="0" 
-                Grid.Row="3"
-                Margin="130,170,130,50"
-                Content="Create Dog"
-                FontFamily="Fonts/Dosis"
-                FontSize="22"
-                FontWeight="DemiBold"
-                />
-
-        <Button Grid.Column="0" 
-                Grid.Row="3"
-                Margin="130,70,130,150"
-                Content="Find Dog"
-                FontFamily="Fonts/Dosis"
-                FontSize="22"
-                FontWeight="DemiBold"/>
-
-        <Button Grid.Column="0" 
-                Grid.Row="3"
-                Margin="130,120,130,100"
-                Content="Search HD Index"
-                FontFamily="Fonts/Dosis"
-                FontSize="22"
-                FontWeight="DemiBold"/>
-
-        <Image Grid.Column="1" HorizontalAlignment="Center" Height="254" Grid.Row="3" VerticalAlignment="Center" Width="354" Source="/Boxer2.jpg"/>
-        
-
-
-
-
-
-
-
-
-
+        <ContentControl Grid.Row="2" Grid.ColumnSpan="2" Content="{Binding SelectedViewModel}" Margin="10,65,10,10" Grid.RowSpan="3"/>
     </Grid>
 
 </Window> 

@@ -1,0 +1,14 @@
+﻿<UserControl x:Class="ProjektHund.Views.CreateDogView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:ProjektHund.Views"
+             mc:Ignorable="d"
+            Background="SaddleBrown"
+             d:DesignHeight="600" d:DesignWidth="800">
+    <Grid>
+        <Image HorizontalAlignment="Center" Height="254" VerticalAlignment="Top" Width="354" Source="/Boxer2.jpg" Margin="0,149,0,0"/>
+
+    </Grid>
+</UserControl>
