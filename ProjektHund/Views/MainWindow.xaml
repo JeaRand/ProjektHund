@@ -97,8 +97,7 @@
                    HorizontalAlignment="Center"
                    Margin="327,7,313,18" 
                    FontFamily="Fonts/Dosis"
-                   FontWeight="Bold" Grid.ColumnSpan="2"
-                   />
+                   FontWeight="Bold" Grid.ColumnSpan="2"/>
 
         <ContentControl Grid.Row="2" Grid.ColumnSpan="2" Content="{Binding SelectedViewModel}" Margin="10,65,10,10" Grid.RowSpan="3"/>
     </Grid>
