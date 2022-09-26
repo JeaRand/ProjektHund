@@ -1,0 +1,125 @@
+﻿<Window x:Class="Modern_UI2._0.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Modern_UI2._0"
+        mc:Ignorable="d"
+        WindowStyle="None"
+        ResizeMode="NoResize"
+        Background="SaddleBrown"
+    Title="FrontSide" Height="500" Width="900">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="25"/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition Height="250"/>
+            <RowDefinition/>
+
+        </Grid.RowDefinitions>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+
+        <Grid Background="Black"
+              Grid.ColumnSpan="2">
+
+
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition Width="auto"/>
+                <ColumnDefinition Width="100"/>
+                <ColumnDefinition Width="100"/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+
+            <TextBlock Text="Home"
+                       Foreground="LightGray"
+                       Grid.Column="1"
+                       VerticalAlignment="Center"
+                       HorizontalAlignment="Center"
+                       FontFamily="Fonts/Dosis"
+                       FontWeight="Medium"/>
+
+            <TextBlock Text="Menu"
+                       Foreground="LightGray"
+                       Grid.Column="2"
+                       VerticalAlignment="Center"
+                       HorizontalAlignment="Center"
+                       FontFamily="Fonts/Dosis"
+                       FontWeight="Medium"/>
+
+        
+
+
+        </Grid>
+
+        <TextBlock Grid.Row="1"
+                   FontSize="46"
+                   Text="Welcome to Boxer-Klubben"
+                   Margin="150,50,150,30" 
+                   FontFamily="Fonts/Dosis"
+                   FontWeight="Bold"
+                   Grid.ColumnSpan="2"
+                   Grid.RowSpan="2"/>
+
+        <TextBlock Grid.Row="3"
+                   FontSize="34"
+                   Text="Choose options"
+                   Margin="100,10,100,10" 
+                   FontFamily="Fonts/Dosis"
+                   FontWeight="Bold"
+                   />
+
+        <Button Grid.Column="0" 
+                Grid.Row="3"
+                Margin="130,170,130,50"
+                Content="Create Dog"
+                FontFamily="Fonts/Dosis"
+                FontSize="22"
+                FontWeight="DemiBold"
+                />
+
+        <Button Grid.Column="0" 
+                Grid.Row="3"
+                Margin="130,70,130,150"
+                Content="Find Dog"
+                FontFamily="Fonts/Dosis"
+                FontSize="22"
+                FontWeight="DemiBold"/>
+
+        <Button Grid.Column="0" 
+                Grid.Row="3"
+                Margin="130,120,130,100"
+                Content="Search HD Index"
+                FontFamily="Fonts/Dosis"
+                FontSize="22"
+                FontWeight="DemiBold"/>
+
+        <Image Grid.Column="1" HorizontalAlignment="Center" Height="254" Grid.Row="3" VerticalAlignment="Center" Width="354" Source="/Boxer2.jpg"/>
+        
+
+
+
+
+
+
+
+
+
+    </Grid>
+
+</Window> 
