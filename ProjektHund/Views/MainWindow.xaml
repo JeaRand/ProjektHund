@@ -58,12 +58,14 @@
                        VerticalAlignment="Center"
                        HorizontalAlignment="Center"
                        FontFamily="Fonts/Dosis"
+
                        FontWeight="Medium"/>
             <StackPanel Grid.Column="2" Grid.ColumnSpan="11" Margin="51,73,46,-83" Orientation="Horizontal">
                 <Button
                     Content="Create Dog"
                     FontFamily="Fonts/Dosis"
                     FontSize="22"
+                    Foreground="White"
                     Margin="0,0,20,0"
                     Command="{Binding UpdateViewCommand}" CommandParameter="CreateDog"
                     FontWeight="DemiBold" RenderTransformOrigin="0.494,0.654"
@@ -73,6 +75,7 @@
                     Content="Search HD Index"
                     FontFamily="Fonts/Dosis"
                     FontSize="22"
+                    Foreground="White"
                     HorizontalAlignment="Center"
                     Command="{Binding UpdateViewCommand}" CommandParameter="SearchHDIndex"
                     FontWeight="DemiBold" Height="30" Width="190"/>
@@ -80,6 +83,7 @@
                     Content="Find Dog"
                     FontFamily="Fonts/Dosis"
                     FontSize="22"
+                    Foreground="White"
                     Margin="20,0,0,0"
                     Command="{Binding UpdateViewCommand}" CommandParameter="FindDog"
                     FontWeight="DemiBold" Height="30" Width="192"/>
@@ -89,6 +93,7 @@
         <TextBlock Grid.Row="1"
                    FontSize="34"
                    Text="Choose option"
+                   Foreground="white"
                    HorizontalAlignment="Center"
                    Margin="327,7,313,18" 
                    FontFamily="Fonts/Dosis"
