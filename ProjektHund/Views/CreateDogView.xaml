@@ -17,7 +17,7 @@
         <Grid.ColumnDefinitions>
             <ColumnDefinition/>
             <ColumnDefinition/>
-        </Grid.ColumnDefinitions>
+        </Grid.ColumnDefinitions >
 
         <Grid Background="Chocolate"
               Grid.ColumnSpan="2">
@@ -52,11 +52,10 @@
               Content="{Binding Question}" 
               FontFamily="Fonts/Dosis"
               FontSize="22"
-              Foreground="White"
-              HorizontalAlignment="Left"
-              Background="Chocolate"
+              Background="White"
+              HorizontalAlignment="Center"
               FontWeight="DemiBold" Height="30" Width="162"
-              Margin="38,140,0,0" 
+              Margin="0,140,0,0" 
               VerticalAlignment="Top"/>
 
         <TextBox 
@@ -65,9 +64,9 @@
               FontSize="22"
               Foreground="White"
               HorizontalAlignment="Center"
-              Background="Chocolate"
+              Background="white"
               FontWeight="DemiBold" 
-              Height="30" Width="340"
+              Height="30" Width="324"
               Margin="0,195,0,0" 
               VerticalAlignment="Top" TextAlignment="Left"/>
 
