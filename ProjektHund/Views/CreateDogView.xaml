@@ -27,6 +27,27 @@
                 <ColumnDefinition Width="720"/>
                 <ColumnDefinition Width="30"/>
             </Grid.ColumnDefinitions>
+            <TextBox 
+              Text="{Binding EnterName}"
+              FontFamily="Fonts/Dosis"
+              FontSize="22"
+              Foreground="White"
+              HorizontalAlignment="Left"
+              Background="white"
+              FontWeight="DemiBold" 
+              Height="30" Width="324"
+              Margin="0,195,0,0" 
+              VerticalAlignment="Top" TextAlignment="Left" Grid.Column="1"/>
+            <Label
+              x:Name="Questions"  
+              Content="{Binding Question}" 
+              FontFamily="Fonts/Dosis"
+              FontSize="22"
+              Background="White"
+              HorizontalAlignment="Left"
+              FontWeight="DemiBold" Height="30" Width="162"
+              Margin="0,141,0,0" 
+              VerticalAlignment="Top" Grid.Column="1"/>
 
         </Grid>
 
@@ -36,7 +57,7 @@
                Text="Create Dog"
                Foreground="white"
                HorizontalAlignment="Center"
-               Margin="0,60,0,10" 
+               Margin="0,60,0,343" 
                FontFamily="Fonts/Dosis"
                FontWeight="Bold" Width="190"/>
 
@@ -47,37 +68,12 @@
                Width="380" 
                Source="/Views/Boxer2.jpg"/>
 
-        <Label
-              Name="Questions"  
-              Content="{Binding Question}" 
-              FontFamily="Fonts/Dosis"
-              FontSize="22"
-              Background="White"
-              HorizontalAlignment="Center"
-              FontWeight="DemiBold" Height="30" Width="162"
-              Margin="0,140,0,0" 
-              VerticalAlignment="Top"/>
-
-        <TextBox 
-              Text="{Binding EnterName}"
-              FontFamily="Fonts/Dosis"
-              FontSize="22"
-              Foreground="White"
-              HorizontalAlignment="Center"
-              Background="white"
-              FontWeight="DemiBold" 
-              Height="30" Width="324"
-              Margin="0,195,0,0" 
-              VerticalAlignment="Top" TextAlignment="Left"/>
-
         <Button 
               Content="Next" 
               HorizontalAlignment="Left" 
               Margin="333,250,0,0" 
               VerticalAlignment="Top"
-              FontFamily="Fonts/Dosis"
-              FontSize="16"
-              Foreground="White"/>
+              FontFamily="Fonts/Dosis" FontSize="22" FontWeight="Bold" Foreground="White"/>
 
 
 
