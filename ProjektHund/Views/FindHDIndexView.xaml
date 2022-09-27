@@ -13,9 +13,9 @@
 
         </Grid.RowDefinitions>
         <TextBlock
-                   FontSize="46"
+                   FontSize="34"
                    Text="Find HD Index"
-                   Margin="238,10,238,371" 
+                   Margin="238,17,238,364" 
                    FontFamily="Fonts/Dosis"
                    FontWeight="Bold"
                    Foreground="White"/>

@@ -17,7 +17,7 @@
             <views:FindHDIndexView/>
         </DataTemplate>
 
-        
+
         <Style TargetType="Button">
             <Setter Property="Template">
                 <Setter.Value>
