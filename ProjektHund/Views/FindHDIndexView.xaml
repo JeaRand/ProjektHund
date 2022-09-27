@@ -10,22 +10,20 @@
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="450"/>
-
         </Grid.RowDefinitions>
-        
         <TextBlock
                    FontSize="34"
                    Text="Find HD Index"
-                   Margin="238,17,238,364" 
-                   FontFamily="Fonts/Dosis"
+                   Margin="282,10,282,388" 
+                   FontFamily="Roboto"
                    FontWeight="Bold"
                    Foreground="White"/>
-        <Label x:Name="firstNumberLabel" Content="Enter First Number" FontSize="22" FontWeight="Bold" Foreground="White" HorizontalAlignment="Left" Margin="59,91,0,0" VerticalAlignment="Top" Height="39" Width="206"/>
-        <Label x:Name="secondNumberLabel" Content="Enter Second Number" FontSize="22" FontWeight="Bold" Foreground="White" HorizontalAlignment="Left" Margin="59,181,0,0" VerticalAlignment="Top" Height="39" Width="237"/>
-        <Button  x:Name="SearchHDIndex" Content="Search" FontSize="22" FontWeight="Bold" Foreground="White" HorizontalAlignment="Left" Margin="315,270,0,0" VerticalAlignment="Top" Height="33" Width="73" Click="SearchHDIndex_Click"/>
-        <TextBox x:Name="firstNumber" HorizontalAlignment="Left" Background="White" Margin="59,135,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="34" Width="206"/>
-        <TextBox x:Name="secondNumber" HorizontalAlignment="Left" Background="White" Margin="59,225,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="34" Width="206"/>
-        <ListView Name="lstView" Margin="496,84,10,109">
+        <Label x:Name="firstNumberLabel" FontFamily="Roboto" Content="Enter First Number" FontSize="22" FontWeight="Bold" Foreground="White" HorizontalAlignment="Left" Margin="59,91,0,0" VerticalAlignment="Top" Height="39" Width="206"/>
+        <Label x:Name="secondNumberLabel" FontFamily="Roboto" Content="Enter Second Number" FontSize="22" FontWeight="Bold" Foreground="White" HorizontalAlignment="Left" Margin="59,186,0,0" VerticalAlignment="Top" Height="39" Width="237"/>
+        <Button x:Name="SearchHDIndex" FontFamily="Roboto" Content="Search" FontSize="22" FontWeight="Bold" Foreground="White" HorizontalAlignment="Center" Margin="0,271,0,0" VerticalAlignment="Top" Height="37" Width="101" Click="SearchHDIndex_Click"/>
+        <TextBox x:Name="firstNumber" HorizontalAlignment="Left" Background="White" Margin="59,135,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="25" Width="206"/>
+        <TextBox x:Name="secondNumber" HorizontalAlignment="Left" Background="White" Margin="59,225,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="25" Width="206"/>
+        <ListView Name="lstView" Margin="496,84,10,122">
             <ListView.View>
                 <GridView>
                     <GridViewColumn Header="ID" Width="50" DisplayMemberBinding="{Binding ID}"/>

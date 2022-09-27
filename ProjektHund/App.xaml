@@ -19,20 +19,24 @@
 
 
         <Style TargetType="Button">
-            <Setter Property="Template">
+            <Setter Property = "Background" Value = "Chocolate" />
+            <Setter Property = "Template">
                 <Setter.Value>
-                    <ControlTemplate TargetType="Button">
-                        <Border CornerRadius="10"
-                            Background="#D2691F"
-                            BorderThickness="1">
-                            <ContentPresenter
-                            HorizontalAlignment="Center"
-                            VerticalAlignment="Center"
-                            Margin="{TemplateBinding Padding}" ></ContentPresenter>
+                    <ControlTemplate TargetType="{x:Type Button}">
+                        <Border CornerRadius="10" Background="{TemplateBinding Background}" BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="1">
+                            <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
                         </Border>
                     </ControlTemplate>
                 </Setter.Value>
             </Setter>
+            <Style.Triggers>
+                <Trigger Property="IsMouseOver" Value="True">
+                    <Setter Property="Background" Value="SandyBrown"/>
+                    <Setter Property="Foreground" Value="Chocolate"/>
+                </Trigger>
+            </Style.Triggers>
         </Style>
+
     </Application.Resources>
+
 </Application>

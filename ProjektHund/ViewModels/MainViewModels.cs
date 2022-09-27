@@ -1,10 +1,4 @@
-﻿
-using ProjektHund.Commands;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using ProjektHund.Commands;
 using System.Windows.Input;
 
 namespace ProjektHund.ViewModels
@@ -17,10 +11,11 @@ namespace ProjektHund.ViewModels
 
         public ICommand UpdateViewCommand { get; set; }
 
-        public MainViewModels() { UpdateViewCommand = new UpdateViewCommand(this); }
-        private string title = "Welcome To Boxer-Klubben";
-
-        public string Title { get { return title; } set { title = value; } }
+        public MainViewModels() 
+        { 
+            UpdateViewCommand = new UpdateViewCommand(this); 
+        
+        }
 
         private string question = "Enter Name:";
 

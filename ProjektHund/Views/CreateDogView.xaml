@@ -29,7 +29,7 @@
             </Grid.ColumnDefinitions>
             <TextBox 
               Text="{Binding EnterName}"
-              FontFamily="Fonts/Dosis"
+              FontFamily="Roboto"
               FontSize="22"
               Foreground="White"
               HorizontalAlignment="Left"
@@ -41,7 +41,7 @@
             <Label
               x:Name="Questions"  
               Content="{Binding Question}" 
-              FontFamily="Fonts/Dosis"
+              FontFamily="Roboto"
               FontSize="22"
               Background="White"
               HorizontalAlignment="Left"
@@ -58,7 +58,7 @@
                Foreground="white"
                HorizontalAlignment="Center"
                Margin="0,60,0,343" 
-               FontFamily="Fonts/Dosis"
+               FontFamily="Roboto"
                FontWeight="Bold" Width="190"/>
 
         <Image Grid.Column="1" 
@@ -71,9 +71,9 @@
         <Button 
               Content="Next" 
               HorizontalAlignment="Left" 
-              Margin="333,250,0,0" 
+              Margin="310,250,0,0" 
               VerticalAlignment="Top"
-              FontFamily="Fonts/Dosis" FontSize="22" FontWeight="Bold" Foreground="White"/>
+              FontFamily="Roboto" FontSize="22" FontWeight="Bold" Foreground="White" Height="31" Width="72"/>
 
 
 

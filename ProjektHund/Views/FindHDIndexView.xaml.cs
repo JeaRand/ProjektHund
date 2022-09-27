@@ -1,23 +1,7 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Data.SqlClient;
-using System.Data;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
-using ProjektHund.ViewModels;
-using ProjektHund.Views;
-using System.Data.SqlClient;
-using static ProjektHund.ViewModels.MainViewModels;
 
 namespace ProjektHund.Views
 {
@@ -37,10 +21,11 @@ namespace ProjektHund.Views
                     SqlConnection cnn = new SqlConnection(ConString);
                     SqlCommand sc;
                     SqlDataReader rd;
+            //ViewModel
             string firstnum = firstNumber.Text;
             string secoundnum = secondNumber.Text;
-
-            string sql = $"SELECT ID,navn,HDindex FROM [dbo].[HundeData3.0] WHERE HDindex BETWEEN {firstnum} AND {secoundnum}";
+            //Model
+            string sql = $"SELECT ID,navn,HDindex FROM [dbo].[Grunddata$] WHERE HDindex BETWEEN {firstnum} AND {secoundnum}";
             try
             {
                 cnn.Open();
@@ -50,7 +35,7 @@ namespace ProjektHund.Views
                 lstView.Items.Clear();
                 while (rd.Read())
                 {
-                    
+                    //ViewModel
                     this.lstView.Items.Add(new {ID = rd.GetValue(0), Name = rd.GetValue(1), HDindex = rd.GetValue(2) });
 
                 }

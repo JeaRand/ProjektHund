@@ -63,7 +63,7 @@
             <StackPanel Grid.Column="2" Grid.ColumnSpan="11" Margin="51,73,46,-83" Orientation="Horizontal">
                 <Button
                     Content="Create Dog"
-                    FontFamily="Fonts/Dosis"
+                    FontFamily="Roboto"
                     FontSize="22"
                     Foreground="White"
                     Margin="0,0,20,0"
@@ -73,7 +73,7 @@
                 />
                 <Button
                     Content="Search HD Index"
-                    FontFamily="Fonts/Dosis"
+                    FontFamily="Roboto"
                     FontSize="22"
                     Foreground="White"
                     HorizontalAlignment="Center"
@@ -81,7 +81,7 @@
                     FontWeight="DemiBold" Height="30" Width="190"/>
                 <Button
                     Content="Find Dog"
-                    FontFamily="Fonts/Dosis"
+                    FontFamily="Roboto"
                     FontSize="22"
                     Foreground="White"
                     Margin="20,0,0,0"
@@ -96,7 +96,7 @@
                    Foreground="white"
                    HorizontalAlignment="Left"
                    Margin="334,5,0,20" 
-                   FontFamily="Fonts/Dosis"
+                   FontFamily="Roboto"
                    FontWeight="Bold" 
                    Grid.ColumnSpan="2"/>
         <ContentControl Grid.Row="2" Grid.ColumnSpan="2" Content="{Binding SelectedViewModel}" Margin="10,65,10,10" Grid.RowSpan="3"/>

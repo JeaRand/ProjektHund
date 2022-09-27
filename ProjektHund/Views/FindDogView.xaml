@@ -39,42 +39,40 @@
               VerticalAlignment="Top" TextAlignment="Left" Grid.Column="1"/>
             <Label
               x:Name="Questions"  
-              Content="Enter Name:" 
-              FontFamily="Fonts/Dosis"
+              Content="Enter Name" 
+              FontFamily="Roboto"
               FontSize="22"
-              Background="White"
+              BorderThickness="0"
               HorizontalAlignment="Left"
-              FontWeight="DemiBold" Height="30" Width="162"
-              Margin="0,145,0,0" 
+              FontWeight="DemiBold" Height="34" Width="162"
+              Margin="0,156,0,0" 
               VerticalAlignment="Top" Grid.Column="1"/>
+            <ListView Grid.Column="1" d:ItemsSource="{d:SampleData ItemCount=5}" Width="300" Margin="420,75,0,75">
+                <ListView.View>
+                    <GridView>
+                        <GridViewColumn/>
+                    </GridView>
+                </ListView.View>
+            </ListView>
 
         </Grid>
-
-
         <TextBlock
                FontSize="34"
                Text="Find Breeding Partner"
                Foreground="white"
-               HorizontalAlignment="Center"
-               Margin="0,60,0,10" 
-               FontFamily="Fonts/Dosis"
+               HorizontalAlignment="Left"
+               Margin="46,44,0,357" 
+               FontFamily="Roboto"
                FontWeight="Bold" Width="354"/>
-
-        <Image Grid.Column="1" 
-               HorizontalAlignment="Center" 
-               Height="259" Margin="0,28,0,0"
-               VerticalAlignment="Top" 
-               Width="380" 
-               Source="/Views/Boxer2.jpg"/>
 
         <Button 
               Content="Next" 
               HorizontalAlignment="Left" 
-              Margin="333,250,0,0" 
+              Margin="323,254,0,0" 
               VerticalAlignment="Top"
-              FontFamily="Fonts/Dosis"
-              FontSize="16"
-              Foreground="White"/>
+              FontFamily="Roboto"
+              FontSize="22"
+              Foreground="White" Height="31" Width="67"/>
 
 
 
