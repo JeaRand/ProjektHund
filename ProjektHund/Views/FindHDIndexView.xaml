@@ -12,6 +12,7 @@
             <RowDefinition Height="450"/>
 
         </Grid.RowDefinitions>
+        
         <TextBlock
                    FontSize="34"
                    Text="Find HD Index"
@@ -19,11 +20,21 @@
                    FontFamily="Fonts/Dosis"
                    FontWeight="Bold"
                    Foreground="White"/>
-        <Label x:Name="firstNumber" Content="Enter First Number" FontSize="22" FontWeight="Bold" Foreground="White" HorizontalAlignment="Left" Margin="59,91,0,0" VerticalAlignment="Top" Height="39" Width="206"/>
-        <Label x:Name="secondNumber" Content="Enter Second Number" FontSize="22" FontWeight="Bold" Foreground="White" HorizontalAlignment="Left" Margin="59,181,0,0" VerticalAlignment="Top" Height="39" Width="237"/>
-        <ListBox d:ItemsSource="{d:SampleData ItemCount=5}" Margin="441,74,59,145"/>
-        <Button Content="Search" FontSize="22" FontWeight="Bold" Foreground="White" HorizontalAlignment="Left" Margin="315,270,0,0" VerticalAlignment="Top" Height="33" Width="73"/>
-        <TextBlock HorizontalAlignment="Left" Background="White" Margin="59,135,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="34" Width="206"/>
-        <TextBlock HorizontalAlignment="Left" Background="White" Margin="59,225,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="34" Width="206"/>
+        <Label x:Name="firstNumberLabel" Content="Enter First Number" FontSize="22" FontWeight="Bold" Foreground="White" HorizontalAlignment="Left" Margin="59,91,0,0" VerticalAlignment="Top" Height="39" Width="206"/>
+        <Label x:Name="secondNumberLabel" Content="Enter Second Number" FontSize="22" FontWeight="Bold" Foreground="White" HorizontalAlignment="Left" Margin="59,181,0,0" VerticalAlignment="Top" Height="39" Width="237"/>
+        <Button  x:Name="SearchHDIndex" Content="Search" FontSize="22" FontWeight="Bold" Foreground="White" HorizontalAlignment="Left" Margin="315,270,0,0" VerticalAlignment="Top" Height="33" Width="73" Click="SearchHDIndex_Click"/>
+        <TextBox x:Name="firstNumber" HorizontalAlignment="Left" Background="White" Margin="59,135,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="34" Width="206"/>
+        <TextBox x:Name="secondNumber" HorizontalAlignment="Left" Background="White" Margin="59,225,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="34" Width="206"/>
+        <ListView Name="lstView" Margin="496,84,10,109">
+            <ListView.View>
+                <GridView>
+                    <GridViewColumn Header="ID" Width="50" DisplayMemberBinding="{Binding ID}"/>
+                    <GridViewColumn Header="Name" Width="140" DisplayMemberBinding="{Binding Name}"/>
+                    <GridViewColumn Header="HD-index" Width="100" DisplayMemberBinding="{Binding HDindex}"/>
+                </GridView>
+            </ListView.View>
+        </ListView>
     </Grid>
+
+
 </UserControl>
