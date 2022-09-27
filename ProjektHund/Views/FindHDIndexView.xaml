@@ -5,103 +5,25 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:ProjektHund.Views"
              mc:Ignorable="d" 
-             Background="IndianRed"
-             d:DesignHeight="450" d:DesignWidth="800">
+             Background="Chocolate"
+             d:DesignHeight="350" d:DesignWidth="800">
     <Grid>
         <Grid.RowDefinitions>
-            <RowDefinition Height="25"/>
-            <RowDefinition/>
-            <RowDefinition/>
-            <RowDefinition Height="250"/>
-            <RowDefinition/>
+            <RowDefinition Height="450"/>
 
         </Grid.RowDefinitions>
-
-        <Grid.ColumnDefinitions>
-            <ColumnDefinition/>
-            <ColumnDefinition/>
-        </Grid.ColumnDefinitions>
-
-        <Grid Background="Black"
-              Grid.ColumnSpan="2">
-
-            <Grid.ColumnDefinitions>
-                <ColumnDefinition/>
-                <ColumnDefinition Width="auto"/>
-                <ColumnDefinition Width="100"/>
-                <ColumnDefinition Width="100"/>
-                <ColumnDefinition/>
-                <ColumnDefinition/>
-                <ColumnDefinition/>
-                <ColumnDefinition/>
-                <ColumnDefinition/>
-                <ColumnDefinition/>
-                <ColumnDefinition/>
-                <ColumnDefinition/>
-                <ColumnDefinition/>
-                <ColumnDefinition/>
-            </Grid.ColumnDefinitions>
-
-            <TextBlock Text="Home"
-                       Foreground="LightGray"
-                       Grid.Column="1"
-                       VerticalAlignment="Center"
-                       HorizontalAlignment="Center"
-                       FontFamily="Fonts/Dosis"
-                       FontWeight="Medium"/>
-
-            <TextBlock Text="Menu"
-                       Foreground="LightGray"
-                       Grid.Column="2"
-                       VerticalAlignment="Center"
-                       HorizontalAlignment="Center"
-                       FontFamily="Fonts/Dosis"
-                       FontWeight="Medium"/>
-        </Grid>
-
-        <TextBlock Grid.Row="1"
+        <TextBlock
                    FontSize="46"
                    Text="Find HD Index"
-                   Margin="150,50,150,30" 
+                   Margin="238,10,238,371" 
                    FontFamily="Fonts/Dosis"
                    FontWeight="Bold"
-                   Grid.ColumnSpan="2"
-                   Grid.RowSpan="2"/>
-
-        <TextBlock Grid.Row="3"
-                   FontSize="34"
-                   Text="Choose options"
-                   Margin="100,10,100,10" 
-                   FontFamily="Fonts/Dosis"
-                   FontWeight="Bold"
-                   />
-
-        <Button Grid.Column="0" 
-                Grid.Row="3"
-                Margin="130,170,130,50"
-                Content="Create Dog"
-                FontFamily="Fonts/Dosis"
-                FontSize="22"
-                FontWeight="DemiBold"
-                />
-
-        <Button Grid.Column="0" 
-                Grid.Row="3"
-                Margin="130,70,130,150"
-                Content="Find Dog"
-                FontFamily="Fonts/Dosis"
-                FontSize="22"
-                FontWeight="DemiBold"/>
-
-        <Button Grid.Column="0" 
-                Grid.Row="3"
-                Margin="130,120,130,100"
-                Content="Search HD Index"
-                FontFamily="Fonts/Dosis"
-                FontSize="22"
-                FontWeight="DemiBold"/>
-
-        <Image Grid.Column="1" HorizontalAlignment="Center" Height="254" Grid.Row="3" VerticalAlignment="Center" Width="354" Source="/Boxer2.jpg"/>
-
+                   Foreground="White"/>
+        <Label x:Name="firstNumber" Content="Enter First Number" FontSize="22" FontWeight="Bold" Foreground="White" HorizontalAlignment="Left" Margin="59,91,0,0" VerticalAlignment="Top" Height="39" Width="206"/>
+        <Label x:Name="secondNumber" Content="Enter Second Number" FontSize="22" FontWeight="Bold" Foreground="White" HorizontalAlignment="Left" Margin="59,181,0,0" VerticalAlignment="Top" Height="39" Width="237"/>
+        <ListBox d:ItemsSource="{d:SampleData ItemCount=5}" Margin="441,74,59,145"/>
+        <Button Content="Search" FontSize="22" FontWeight="Bold" Foreground="White" HorizontalAlignment="Left" Margin="315,270,0,0" VerticalAlignment="Top" Height="33" Width="73"/>
+        <TextBlock HorizontalAlignment="Left" Background="White" Margin="59,135,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="34" Width="206"/>
+        <TextBlock HorizontalAlignment="Left" Background="White" Margin="59,225,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="34" Width="206"/>
     </Grid>
 </UserControl>
