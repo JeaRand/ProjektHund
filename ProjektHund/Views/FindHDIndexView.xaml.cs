@@ -33,14 +33,14 @@ namespace ProjektHund.Views
 
         private void SearchHDIndex_Click(object sender, RoutedEventArgs e)
         {
-                    string ConString = @"Server=localhost\SQLEXPRESS;Database=Hunde;Trusted_Connection=True";
+                    string ConString = @"Data Source=localhost\SQLEXPRESS;Initial Catalog=Hunde;Integrated Security=True";
                     SqlConnection cnn = new SqlConnection(ConString);
                     SqlCommand sc;
                     SqlDataReader rd;
             string firstnum = firstNumber.Text;
             string secoundnum = secondNumber.Text;
 
-            string sql = $"SELECT ID,navn,HDindex FROM [dbo].[Grunddata$] WHERE HDindex BETWEEN {firstnum} AND {secoundnum}";
+            string sql = $"SELECT ID,navn,HDindex FROM [dbo].[HundeData3.0] WHERE HDindex BETWEEN {firstnum} AND {secoundnum}";
             try
             {
                 cnn.Open();
