@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ProjektHund.ViewModels;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -23,6 +24,7 @@ namespace ProjektHund.Views
         public CreateDogView()
         {
             InitializeComponent();
+            DataContext = new MainViewModels();
         }
     }
 }

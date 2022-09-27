@@ -36,5 +36,22 @@ namespace ProjektHund.ViewModels
 			set { title = value; }
 		}
 
+            private string question = "Enter Name:";
+
+            public string Question
+            {
+                get { return question; }
+                set { question = value; }
+            }
+
+
+		private string enterName = "Enter Dog Name:";
+
+		public string EnterName
+		{
+			get { return enterName; }
+			set { enterName = value; }
+		}
+
 	}
-}
+    }

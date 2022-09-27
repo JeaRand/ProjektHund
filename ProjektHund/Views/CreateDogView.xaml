@@ -3,12 +3,95 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
-             xmlns:local="clr-namespace:ProjektHund.Views"
+             xmlns:local="clr-namespace:ProjektHund.Views" xmlns:viewmodels="clr-namespace:ProjektHund.ViewModels" d:DataContext="{d:DesignInstance Type=viewmodels:CreateDogViewModel}"
              mc:Ignorable="d"
-            Background="SaddleBrown"
-             d:DesignHeight="600" d:DesignWidth="800">
+            Background="Chocolate"
+             d:DesignHeight="450" d:DesignWidth="800">
     <Grid>
-        <Image HorizontalAlignment="Center" Height="254" VerticalAlignment="Top" Width="354" Source="/Boxer2.jpg" Margin="0,149,0,0"/>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="450"/>
+
+
+        </Grid.RowDefinitions>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+
+        <Grid Background="Chocolate"
+              Grid.ColumnSpan="2">
+
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="30"/>
+                <ColumnDefinition Width="720"/>
+                <ColumnDefinition Width="30"/>
+            </Grid.ColumnDefinitions>
+
+        </Grid>
+
+
+        <TextBlock
+               FontSize="34"
+               Text="Create Dog"
+               Foreground="white"
+               HorizontalAlignment="Center"
+               Margin="0,60,0,10" 
+               FontFamily="Fonts/Dosis"
+               FontWeight="Bold" Width="190"/>
+
+        <Image Grid.Column="1" 
+               HorizontalAlignment="Center" 
+               Height="259" Margin="0,28,0,0"
+               VerticalAlignment="Top" 
+               Width="380" 
+               Source="/Views/Boxer2.jpg"/>
+
+        <Label
+              Name="Questions"  
+              Content="{Binding Question}" 
+              FontFamily="Fonts/Dosis"
+              FontSize="22"
+              Foreground="White"
+              HorizontalAlignment="Left"
+              Background="Chocolate"
+              FontWeight="DemiBold" Height="30" Width="162"
+              Margin="38,140,0,0" 
+              VerticalAlignment="Top"/>
+
+        <TextBox 
+              Text="{Binding EnterName}"
+              FontFamily="Fonts/Dosis"
+              FontSize="22"
+              Foreground="White"
+              HorizontalAlignment="Center"
+              Background="Chocolate"
+              FontWeight="DemiBold" 
+              Height="30" Width="340"
+              Margin="0,195,0,0" 
+              VerticalAlignment="Top" TextAlignment="Left"/>
+
+        <Button 
+              Content="Next" 
+              HorizontalAlignment="Left" 
+              Margin="333,250,0,0" 
+              VerticalAlignment="Top"
+              FontFamily="Fonts/Dosis"
+              FontSize="16"
+              Foreground="White"/>
+
+
+
+
+
+
+
+
+
+
+
+
+
 
     </Grid>
 </UserControl>

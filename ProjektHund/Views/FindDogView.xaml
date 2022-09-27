@@ -9,11 +9,8 @@
              d:DesignHeight="450" d:DesignWidth="800">
     <Grid>
         <Grid.RowDefinitions>
-            <RowDefinition Height="25"/>
-            <RowDefinition/>
-            <RowDefinition/>
-            <RowDefinition Height="250"/>
-            <RowDefinition/>
+            <RowDefinition Height="450"/>
+
 
         </Grid.RowDefinitions>
 
@@ -22,86 +19,51 @@
             <ColumnDefinition/>
         </Grid.ColumnDefinitions>
 
-        <Grid Background="Black"
+        <Grid Background="Chocolate"
               Grid.ColumnSpan="2">
 
             <Grid.ColumnDefinitions>
-                <ColumnDefinition/>
-                <ColumnDefinition Width="auto"/>
-                <ColumnDefinition Width="100"/>
-                <ColumnDefinition Width="100"/>
-                <ColumnDefinition/>
-                <ColumnDefinition/>
-                <ColumnDefinition/>
-                <ColumnDefinition/>
-                <ColumnDefinition/>
-                <ColumnDefinition/>
-                <ColumnDefinition/>
-                <ColumnDefinition/>
-                <ColumnDefinition/>
-                <ColumnDefinition/>
+                <ColumnDefinition Width="30"/>
+                <ColumnDefinition Width="720"/>
+                <ColumnDefinition Width="30"/>
             </Grid.ColumnDefinitions>
 
-            <TextBlock Text="Home"
-                       Foreground="LightGray"
-                       Grid.Column="1"
-                       VerticalAlignment="Center"
-                       HorizontalAlignment="Center"
-                       FontFamily="Fonts/Dosis"
-                       FontWeight="Medium"/>
-
-            <TextBlock Text="Menu"
-                       Foreground="LightGray"
-                       Grid.Column="2"
-                       VerticalAlignment="Center"
-                       HorizontalAlignment="Center"
-                       FontFamily="Fonts/Dosis"
-                       FontWeight="Medium"/>
         </Grid>
 
-        <TextBlock Grid.Row="1"
-                   FontSize="46"
-                   Text="Find Dog"
-                   Margin="150,50,150,30" 
-                   FontFamily="Fonts/Dosis"
-                   FontWeight="Bold"
-                   Grid.ColumnSpan="2"
-                   Grid.RowSpan="2"/>
 
-        <TextBlock Grid.Row="3"
-                   FontSize="34"
-                   Text="Choose options"
-                   Margin="100,10,100,10" 
-                   FontFamily="Fonts/Dosis"
-                   FontWeight="Bold"
-                   />
+        <TextBlock
+               FontSize="34"
+               Text="Find Dog"
+               Foreground="white"
+               HorizontalAlignment="Center"
+               Margin="0,70,0,0" 
+               FontFamily="Fonts/Dosis"
+               FontWeight="Bold" Width="150"/>
 
-        <Button Grid.Column="0" 
-                Grid.Row="3"
-                Margin="130,170,130,50"
-                Content="Create Dog"
-                FontFamily="Fonts/Dosis"
-                FontSize="22"
-                FontWeight="DemiBold"
-                />
+        <Image Grid.Column="1" 
+               HorizontalAlignment="Center" 
+               Height="259" Margin="0,28,0,0"
+               VerticalAlignment="Top" 
+               Width="380" 
+               Source="/Views/Boxer2.jpg"/>
 
-        <Button Grid.Column="0" 
-                Grid.Row="3"
-                Margin="130,70,130,150"
-                Content="Find Dog"
-                FontFamily="Fonts/Dosis"
-                FontSize="22"
-                FontWeight="DemiBold"/>
+        <StackPanel Margin="30,150,30,10">
+            <ComboBox x:Name="comboBox">
+                <ComboBoxItem Content="Search Dog Name"/>
+                <ComboBoxItem IsSelected="True" Content="Search HD index"/>
+                <ComboBoxItem Content="Search Dog Pedigree Number"/>
+            </ComboBox>
 
-        <Button Grid.Column="0" 
-                Grid.Row="3"
-                Margin="130,120,130,100"
-                Content="Search HD Index"
-                FontFamily="Fonts/Dosis"
-                FontSize="22"
-                FontWeight="DemiBold"/>
-
-        <Image Grid.Column="1" HorizontalAlignment="Center" Height="254" Grid.Row="3" VerticalAlignment="Center" Width="354" Source="/Boxer2.jpg"/>
+            <TextBox Margin="0,30,0,0"
+              Text="{Binding ElementName=comboBox, Mode=OneWay}"       
+              FontFamily="Fonts/Dosis"
+              FontSize="22"
+              Foreground="White"
+              Background="Chocolate"
+              FontWeight="DemiBold" 
+              Height="30" Width="340"
+              TextAlignment="Left" />
+        </StackPanel>
 
     </Grid>
 </UserControl>

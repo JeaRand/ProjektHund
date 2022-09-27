@@ -6,7 +6,7 @@
         xmlns:local="clr-namespace:ProjektHund"
         mc:Ignorable="d"
         WindowStyle="None"
-        Background="SaddleBrown"
+        Background="#8B4513"
         Title="FrontSide" Height="500" Width="900">
 
     <Grid>
@@ -58,8 +58,8 @@
                        VerticalAlignment="Center"
                        HorizontalAlignment="Center"
                        FontFamily="Fonts/Dosis"
-
                        FontWeight="Medium"/>
+
             <StackPanel Grid.Column="2" Grid.ColumnSpan="11" Margin="51,73,46,-83" Orientation="Horizontal">
                 <Button
                     Content="Create Dog"
@@ -94,14 +94,15 @@
                    FontSize="34"
                    Text="Choose option"
                    Foreground="white"
-                   HorizontalAlignment="Center"
-                   Margin="327,7,313,18" 
+                   HorizontalAlignment="Left"
+                   Margin="334,5,0,20" 
                    FontFamily="Fonts/Dosis"
-                   FontWeight="Bold" Grid.ColumnSpan="2"/>
+                   FontWeight="Bold" 
+                   Grid.ColumnSpan="2"/>
 
-        
-        
-        
+
+
+
         <ContentControl Grid.Row="2" Grid.ColumnSpan="2" Content="{Binding SelectedViewModel}" Margin="10,65,10,10" Grid.RowSpan="3"/>
     </Grid>
 

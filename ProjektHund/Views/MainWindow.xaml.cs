@@ -26,5 +26,13 @@ namespace ProjektHund
             InitializeComponent();
             DataContext = new MainViewModels();
         }
+
+        protected override void OnMouseLeftButtonDown(MouseButtonEventArgs e)
+        {
+            base.OnMouseLeftButtonDown(e);
+            this.DragMove();
+        }
     }
+
+
 }

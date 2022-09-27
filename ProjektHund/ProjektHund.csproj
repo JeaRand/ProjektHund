@@ -16,10 +16,12 @@
 
   <ItemGroup>
     <None Remove="Boxer2.jpg" />
+    <None Remove="Views\Boxer2.jpg" />
   </ItemGroup>
 
   <ItemGroup>
     <Resource Include="Boxer2.jpg" />
+    <Resource Include="Views\Boxer2.jpg" />
   </ItemGroup>
 
   <ItemGroup>
